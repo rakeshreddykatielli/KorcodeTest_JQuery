@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="challenge.css">
+</head>
+<body>
+<script>window.korcode = {oopchal:{}};</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="Instructions.js"></script>
+<script src="Body.js"></script>
+<script src="Input.js"></script>
+<script src="Output.js"></script>
+<script>
+'use strict';
+
+var title = $('<h1>', {class:'korcode-oopchal-title', text:'OOP Challenge'});
+var inst  = new korcode.oopchal.Instructions({example:'987'});
+var input  = new korcode.oopchal.Input({example:'987'});
+var output  = new korcode.oopchal.Output({example:'987'});
+var body  = korcode.oopchal.Body && new korcode.oopchal.Body({value:'123'});
+var textbox =
+$('body').append([title, inst, input]);
+
+</script>
+
+</body>
+</html>
